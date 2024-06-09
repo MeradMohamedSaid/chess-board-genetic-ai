@@ -14,4 +14,4 @@ This project showcases the application of genetic algorithms to a classic optimi
 
 Below is an image of one of the best optimal solutions found by the algorithm:
 
-![Optimal Solution](path/to/your/image.png)
+![Optimal Solution](./optimal.png)

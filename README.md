@@ -1,8 +1,17 @@
-# React + Vite
+# Genetic Algorithm for Placing Chess Pieces on an 8x8 Board with Minimum Conflicts
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains a genetic algorithm designed to place chess pieces on an 8x8 board with the goal of minimizing conflicts.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Algorithm Implementation**: Core logic of the genetic algorithm.
+- **Fitness Evaluation**: Methods to assess the number of conflicts in a given arrangement.
+- **Selection, Crossover, and Mutation Functions**: Evolutionary operations used to generate new populations.
+
+This project showcases the application of genetic algorithms to a classic optimization problem in a simple and comprehensible manner.
+
+## Optimal Solution
+
+Below is an image of one of the best optimal solutions found by the algorithm:
+
+![Optimal Solution](path/to/your/image.png)

@@ -1,0 +1,253 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "ubuntu";
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+}
+#root{
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background: #202020;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.boardBody{
+  width: 640px;
+  height: 640px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.boardRow{
+  width: 640px;
+  height: 80px;
+  display: flex;
+}
+
+.cell{
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.borderRow{
+  width: 780px;
+  height: 10px;
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.loaderRow{
+  width: 640px;
+  height: 640px;
+  background: #232323;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+  color: white;
+  font-size: 10rem;
+  filter: opacity(.9);
+}
+.loaderRow .loader{
+  transform: rotate(180deg);
+}
+.piece{
+  width: 50px;
+  height: 50px;
+  transition: .3s ease;
+}
+
+.pieceHolder{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: rgba(0, 255, 0, 0.486); move*/
+  /*background: rgba(255, 0, 0, 0.486); conflict*/
+}
+
+.move{
+  width: 100%;
+  height: 100%;
+  background: green;
+}
+.buttons{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  gap: 10px;
+}
+.Button{
+  padding: 0px 20px;
+  height: 42px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: 232323;
+  background: #ffffff;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.Button:hover{
+  background: #ffffff3d;
+  filter: opacity(.6); 
+  box-shadow: rgba(255, 243, 132, 0.5) -30px -10px 50px 0px,
+    rgba(255, 132, 132, 0.5) 30px 10px 30px 0px,
+    rgba(179, 132, 255, 0.5) 30px -10px 70px 0px,
+    rgba(255, 132, 214, 0.5) -30px 10px 80px 0px;
+}
+.Button:active{
+  box-shadow: rgba(255, 243, 132, 0.5) 0px 0px 10px 0px,
+      rgba(255, 132, 132, 0.5) 0px 0px 30px 0px,
+      rgba(179, 132, 255, 0.5) 0px 0px 40px 0px,
+      rgba(255, 132, 214, 0.5) 0px 0px 80px 0px;
+}
+.Button:disabled{
+  background: #ffffff3d;
+  color: #FFF;
+  filter: opacity(.15);
+  cursor: not-allowed;
+}
+
+.titles{
+  font-size: 1.3rem;
+  color: white;
+  font-family: 'ubuntu';
+  margin-bottom: 10px;
+}
+
+.param{
+  width: 100%;
+  height: 100%;
+  background: #23232349;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.conta{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.conta h2{
+  color: white;
+}
+
+.selector{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#rangeValue {
+  position: relative;
+  display: block;
+  text-align: center;
+  font-size: 1.3em;
+  color: #999;
+  font-weight: 400;
+}
+
+.range {
+  width: 200px;
+  height: 10px;
+  -webkit-appearance: none;
+  background: #111;
+  outline: none;
+  border-radius: 15px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 1);
+}
+
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #FCE399;
+  cursor: pointer;
+  border: 4px solid #333;
+}
+
+
+.info{
+  width: 100%;
+  font-family: "inter";
+  color: rgba(255, 255, 255, 0.596);
+  font-size: .8rem;
+  font-weight: thin;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  animation: fade 1s ease infinite alternate;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.loader{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

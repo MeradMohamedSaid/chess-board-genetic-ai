@@ -1,6 +1,6 @@
-# Genetic Algorithm for Placing Chess Pieces on an 8x8 Board with Minimum Conflicts
+# Genetic Algorithm for Placing 10 Chess Pieces on an 8x8 Board with Minimum Conflicts
 
-This repository contains a genetic algorithm designed to place chess pieces on an 8x8 board with the goal of minimizing conflicts.
+This repository contains a genetic algorithm designed to place 10 chess pieces [ 4 queens , 2 rocks , 2 knights , 2 bishops ] on an 8x8 board with the goal of minimizing conflicts between the pieces.
 
 ## Features
 

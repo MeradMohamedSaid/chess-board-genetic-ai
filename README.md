@@ -18,6 +18,6 @@ Below is an image of one of the best optimal solutions found by the algorithm:
 
 ## Usage
 
-1. **Setup**: Install the required dependencies ( npm i ).
-2. **Run the Script**: Execute the script to solve the maze and visualize the solution ( npx vite --port=4000 ) [or any port you want].
+1. **Setup**: Install the required dependencies ( `npm i` ).
+2. **Run the Script**: Execute the script to solve the maze and visualize the solution ( `npx vite --port=4000` ) [or any port you want].
 3. **Use it in browser**: localhost:4000 [or your early setted port].

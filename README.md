@@ -2,6 +2,8 @@
 
 This repository contains a genetic algorithm designed to place 10 chess pieces [ 4 queens , 2 rocks , 2 knights , 2 bishops ] on an 8x8 board with the goal of minimizing conflicts between the pieces.
 
+try it here : https://maze-3lll.vercel.app
+
 ## Features
 
 - **Algorithm Implementation**: Core logic of the genetic algorithm.
